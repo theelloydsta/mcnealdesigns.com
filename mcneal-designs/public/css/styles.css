@@ -1,0 +1,341 @@
+/* @import url('https://fonts.googleapis.com/css?family=Roboto+Slab'); */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Avenir';
+  font-size: 18px;
+}
+
+body {
+  font-family: 'Roboto Slab', serif;
+  min-width: 750px;
+
+}
+
+.p-3  {
+  height: 80px;
+  width: 100%;
+  font-size: 10px;
+}
+
+
+
+ .flip3D {
+  position: relative;
+  margin: 10px;
+  width: 240px;
+  height: 200px;
+  
+}
+
+
+
+
+.flip3D .back {
+  position: relative;
+  width: calc(300px - 30px);
+  height: calc(200px - 30px);
+  background: white;
+  box-sizing: border-box;
+  overflow: hidden; 
+  border-radius: 10px;
+}
+
+.flip3D .back .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(400px - 40px);
+  height: calc(300px - 30px);
+  transition: 0.80s;
+  z-index: 1;
+  opacity: 100%;
+   opacity: 100%;
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+  
+
+}
+
+
+.flip3D .back:hover .icon {
+  /* top: 20px;
+  left: calc(75% - 40%);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%; */
+  opacity: 0.1;
+  
+ 
+}
+
+/* .flip3D .back .icon .fas {
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  transition: 0.5s;
+  color: #ffffff;
+} */
+
+.flip3D .back .content {
+  position: absolute;  
+  top: 100%;
+  height: calc(100%-100px);
+  text-align: center;
+  padding: 5px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  opacity: 100%;
+  
+}
+
+.flip3D .back:hover .content {
+  top: 100px;
+  opacity: 100%;
+}
+
+.flip3D .back .content h3 {
+  margin: 0 0 10px;
+  padding: 0;
+  font-size: 16px;
+  color: dodgerblue;
+  text-align: left;
+  opacity: 100%
+}
+/* 
+.flip3D .back:hover .fas {
+  font-size: 40px;
+  top: 50%;
+  left: 50%;
+
+} */
+
+/* .item-content {
+  padding: 50px;
+  font-family: 'Roboto Slab'; 
+} */
+
+
+
+
+.hero-image {
+  position: relative;
+}
+.bg-image {
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  
+
+  
+}
+.navbar, .info {
+  list-style: none;
+  display: flex;
+  color: white;
+  font-family: 'Blacksword';
+  font-size: 30px;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+  
+  
+
+
+
+}
+
+
+
+.navbar a:hover {
+  color:yellow;
+  text-decoration: none;
+}
+
+
+.modal.and.carousel {
+  position: fixed; 
+}
+
+.labels {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0%;
+  height: 20em;
+  align-items: center;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Avenir Next';
+}
+
+.labels a:hover {
+  text-decoration: none;
+
+  
+}
+
+
+.container {
+  
+  
+}
+
+
+
+
+
+
+
+
+
+/* .info {
+  color: white;
+  font-family: 'Blacksword';
+  font-size: 30px;
+
+}
+
+    
+  
+
+.container {
+  width: 100%;
+}
+
+.banner-wrapper {
+  z-index: 4;
+  transition: all 300ms ease-in-out;
+  position: fixed;
+  width: 100%;
+}
+
+.banner {
+  width: 100%;
+  height: 77px;
+  padding-left: 10px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: rgba(162, 197, 35, 1);
+  transition: all 300ms ease-in-out;
+}
+
+.content {
+  background: url(https://unsplash.it/1400/1400?image=699) center no-repeat;
+  background-size: cover;
+  padding-top: 0;
+  list-style: none;
+  display: flex;
+  
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 25px;
+  color: white;
+}
+
+.right-top {
+  text-transform: none;
+  padding-right: 10px;
+  font-size: 14px;
+}
+
+.nav {
+  width: 100%;
+  height: auto;
+}
+
+.nav ul.menu {
+  height: inherit;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-size: 14px;
+  margin: 20%;
+}
+
+.nav ul.menu li {
+  flex: 1 1 auto;
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+
+.nav ul.menu li a, .left-top a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav ul.menu li a:hover, .left-top a:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: rgba(255, 255, 255, 0.9);
+  top: 50%;
+  position: absolute;
+  width: 100%
+}
+
+.text p:first-child {
+  font-size: 45px !important;
+}
+
+.text p {
+  font-size: 22px;
+}
+
+.animateIn{
+  transform: perspectiveY(0px);
+}
+
+.animateOut{
+  transform: perspectiveY(-100%);
+} */
+
+
+
+
+@media screen and (min-width: 768px){ 
+
+}
+@media screen and (min-width: 992px){ 
+
+}
+@media screen and (min-width: 1200px) { 
+  
+}
+
+
+@media screen and (max-width: 800px) {
+  .text p:first-child {
+    font-size: 40px;
+  }
+  .text p {
+    font-size: 17px;
+  }
+  .nav ul.menu {
+    font-size: 12px;
+  }
+}
